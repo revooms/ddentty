@@ -1,0 +1,37 @@
+{
+    "name": "revooms/dentty",
+    "description": "Identity generator",
+    "keywords": ["dentty", "identity", "generator", "php"],
+    "homepage": "http://github.com/slimphp/Slim-Skeleton",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "revooms",
+            "email": "revooms@users.noreply.github.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type":"vcs",
+            "url":"https://gitlab.com/revooms/faker-provider-profession"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0",
+        "twig/twig": "~1.0",
+        "revooms/faker-provider-profession": "dev-master"
+    },
+    "require-dev": {
+        "phpunit/phpunit": ">=4.8 < 6.0"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+	"scripts": {
+        "start": "php -S 0.0.0.0:8080 -t public public/index.php",
+        "test": "phpunit"
+	}
+
+}
